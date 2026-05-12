@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News & Events | Muthiingini Boys High School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --crimson: #9b1b4b;
+      --gold: #d4a843;
+      --off-white: #f8f5f0;
+      --dark: #1a1a1a;
+      --gray: #555;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--off-white); color: var(--dark); font-family: 'Source Sans 3', sans-serif; }
+    .page-wrap { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+    .brand { display: flex; gap: 16px; align-items: center; margin-bottom: 30px; }
+    .logo-circle { width: 54px; height: 54px; border-radius: 50%; background: var(--crimson); color: white; display: grid; place-items: center; font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; border: 3px solid var(--gold); }
+    .brand-text h1 { font-size: 1.45rem; margin-bottom: 4px; }
+    .brand-text span { color: var(--gold); font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; }
+    .card { background: white; border-radius: 24px; padding: 34px; box-shadow: 0 18px 50px rgba(0,0,0,0.08); margin-bottom: 30px; }
+    .card h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 3.5vw, 2.8rem); color: var(--crimson); margin-bottom: 18px; }
+    .card p { color: var(--gray); line-height: 1.8; margin-bottom: 18px; }
+    .news-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .news-item { background: var(--off-white); padding: 22px; border-radius: 18px; }
+    .news-item h3 { font-family: 'Playfair Display', serif; margin-bottom: 10px; color: var(--dark); }
+    .news-item p { color: var(--gray); line-height: 1.7; }
+    .news-item .date { color: var(--crimson); font-weight: 700; margin-bottom: 8px; }
+    .btn-back { display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; background: var(--crimson); color: white; border-radius: 999px; text-decoration: none; font-weight: 700; margin-top: 20px; }
+    @media (max-width: 700px) { .news-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+    <div class="brand">
+      <div class="logo-circle">MB</div>
+      <div class="brand-text">
+        <h1>Muthiingini Boys High School</h1>
+        <span>News & Events</span>
+      </div>
+    </div>
+
+    <div class="card" id="newsletter">
+      <h2>School Newsletter</h2>
+      <p>Stay informed about school news, upcoming events and student achievements. Our newsletter highlights academic progress, sports results and community updates.</p>
+    </div>
+
+    <div class="card" id="tenders">
+      <h2>School Tenders</h2>
+      <p>For procurement opportunities, school projects and supplier information, please refer to our tender announcements and contact the procurement office directly.</p>
+    </div>
+
+    <div class="card" id="gallery">
+      <h2>Photo Gallery</h2>
+      <p>Browse our gallery to see students in classrooms, on the sports fields and during cultural events. This is a window into daily campus life at Muthiingini Boys.</p>
+    </div>
+
+    <div class="card" id="awards">
+      <h2>Awards & Achievements</h2>
+      <p>Our students have excelled in academics, athletics and leadership. We celebrate their success in national exams, sports competitions and community service.</p>
+    </div>
+
+    <div class="card" id="contacts">
+      <h2>Contacts</h2>
+      <p>For media, admissions or general enquiries, visit our Contact page, email info@muthiinginiboys.sc.ke, or call +254 700 000 000.</p>
+    </div>
+
+    <a href="index.html" class="btn-back">← Back to Home</a>
+  </div>
+</body>
+</html>
