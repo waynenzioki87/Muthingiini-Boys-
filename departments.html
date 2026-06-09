@@ -31,6 +31,15 @@
     .dept-card p, .student-card p { color: var(--gray); line-height: 1.75; }
     .student-card { border-top: 4px solid var(--crimson); }
     .btn-back { display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; background: var(--crimson); color: white; border-radius: 999px; text-decoration: none; font-weight: 700; }
+    @media (max-width: 768px) {
+      .page-wrap { padding: 24px 16px; }
+      nav { gap: 8px; margin-bottom: 20px; }
+      nav a { font-size: 14px; }
+      .brand { margin-bottom: 20px; }
+      .logo-circle { width: 44px; height: 44px; font-size: 16px; }
+      .brand-text h1 { font-size: 1.2rem; }
+      .dept-grid, .students-grid { grid-template-columns: 1fr; }
+    }
     @media (max-width: 800px) { .dept-grid, .students-grid { grid-template-columns: 1fr; } }
   </style>
 </head>

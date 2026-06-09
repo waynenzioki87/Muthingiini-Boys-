@@ -24,16 +24,26 @@
     .card h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 3.5vw, 2.8rem); color: var(--crimson); margin-bottom: 18px; }
     .card p { color: var(--gray); line-height: 1.8; margin-bottom: 18px; }
     .btn-back { display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; background: var(--crimson); color: white; border-radius: 999px; text-decoration: none; font-weight: 700; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 30px; }
+    nav a { color: var(--dark); text-decoration: none; font-weight: 700; }
+    @media (max-width: 768px) {
+      .page-wrap { padding: 24px 16px; }
+      .brand { margin-bottom: 20px; }
+      .logo-circle { width: 44px; height: 44px; font-size: 16px; }
+      .brand-text h1 { font-size: 1.2rem; }
+      nav { gap: 8px; margin-bottom: 20px; }
+      nav a { font-size: 14px; }
+    }
   </style>
 </head>
 <body>
   <div class="page-wrap">
-    <nav style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 30px;">
-      <a href="index.html" style="color: var(--dark); text-decoration: none; font-weight: 700;">Home</a>
-      <a href="about.html" style="color: var(--dark); text-decoration: none; font-weight: 700;">About</a>
-      <a href="departments.html" style="color: var(--dark); text-decoration: none; font-weight: 700;">Departments</a>
-      <a href="community.html" style="color: var(--dark); text-decoration: none; font-weight: 700;">Community</a>
-      <a href="contact.html" style="color: var(--dark); text-decoration: none; font-weight: 700;">Contact</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="departments.html">Departments</a>
+      <a href="community.html">Community</a>
+      <a href="contact.html">Contact</a>
     </nav>
     <div class="brand">
       <div class="logo-circle">MB</div>
