@@ -1,0 +1,91 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us & Administration | Muthiingini Boys High School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --crimson: #9b1b4b;
+      --gold: #d4a843;
+      --off-white: #f8f5f0;
+      --dark: #1a1a1a;
+      --gray: #555;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--off-white); color: var(--dark); font-family: 'Source Sans 3', sans-serif; }
+    .page-wrap { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+    .brand { display: flex; gap: 16px; align-items: center; margin-bottom: 30px; }
+    .logo-circle { width: 54px; height: 54px; border-radius: 50%; background: var(--crimson); color: white; display: grid; place-items: center; font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; border: 3px solid var(--gold); }
+    .brand-text h1 { font-size: 1.45rem; margin-bottom: 4px; }
+    .brand-text span { color: var(--gold); font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; }
+    .card { background: white; border-radius: 24px; padding: 34px; box-shadow: 0 18px 50px rgba(0,0,0,0.08); }
+    .card h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 3.5vw, 2.8rem); color: var(--crimson); margin-bottom: 18px; }
+    .card p { color: var(--gray); line-height: 1.8; margin-bottom: 18px; }
+    .btn-back { display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; background: var(--crimson); color: white; border-radius: 999px; text-decoration: none; font-weight: 700; }
+  </style>
+</head>
+<body>
+<section class="section">
+  <div class="about-grid">
+    <div class="about-text">
+      <p class="section-tag">About Our School</p>
+      <h2 class="section-title">Shaping <span>Leaders</span> of Tomorrow</h2>
+      <p>Muthiingini Boys High School is a premier national boys' school located in Kiambu County, Kenya. Since our founding, we have been dedicated to academic excellence, moral integrity, and the holistic development of every student.</p>
+      <p>Our motto — <em>Nihil Praeter Optimum</em> — is not merely a phrase. It is a living commitment upheld by every student, teacher, and alumnus. We pursue nothing but the best in academics, sports, arts, and character.</p>
+      <div class="about-highlights">
+        <div class="about-card">
+          <h4>History & Mission</h4>
+          <p>Established over six decades ago, we have grown from a humble boarding school into one of Kenya's respected national institutions.</p>
+        </div>
+        <div class="about-card">
+          <h4>Vision & Values</h4>
+          <p>We nurture disciplined leaders who are academically strong, socially responsible, and guided by integrity.</p>
+        </div>
+        <div class="about-card">
+          <h4>School Leadership</h4>
+          <p>Our leadership team combines experience, compassion and a commitment to maintaining a safe and inspiring learning environment.</p>
+        </div>
+        <div class="about-card">
+          <h4>Motto Explained</h4>
+          <p>“Nothing But The Best” means every student strives for excellence while showing respect, loyalty and moral strength.</p>
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary" style="margin-top:10px;">Read More</a>
+    </div>
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&auto=format&fit=crop" alt="School campus" />
+    </div>
+  </div>
+</section>
+
+<!-- DEPARTMENTS -->
+<section class="section section-alt">
+  <p class="section-tag" style="text-align:center;">Academic Excellence</p>
+  <h2 class="section-title" style="text-align:center;">Our <span>Departments</span></h2>
+  <div class="dept-grid">
+    <div class="dept-card">
+      <div class="dept-icon">🔬</div>
+      <h4>Sciences</h4>
+      <p>Biology, Chemistry, Physics and Mathematics — building the next generation of innovators.</p>
+    </div>
+    <div class="dept-card">
+      <div class="dept-icon">📚</div>
+      <h4>Humanities</h4>
+      <p>History, Geography, CRE and Social Studies developing critical, informed thinkers.</p>
+    </div>
+    <div class="dept-card">
+      <div class="dept-icon">🌍</div>
+      <h4>Languages</h4>
+      <p>English, Kiswahili and Foreign Languages — communication is the root of leadership.</p>
+    </div>
+    <div class="dept-card">
+      <div class="dept-icon">⚙️</div>
+      <h4>Technical</h4>
+      <p>Computer Studies, Agriculture and Business equipping students for a modern economy.</p>
+    </div>
+  </div>
+</section>
+</body>
+</html>
