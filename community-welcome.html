@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to the Community | Muthiingini Boys High School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --crimson: #9b1b4b;
+      --gold: #d4a843;
+      --off-white: #f8f5f0;
+      --dark: #1a1a1a;
+      --gray: #555;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--off-white); color: var(--dark); font-family: 'Source Sans 3', sans-serif; }
+    .page-wrap { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+    .brand { display: flex; gap: 16px; align-items: center; margin-bottom: 30px; }
+    .logo-circle { width: 54px; height: 54px; border-radius: 50%; background: var(--crimson); color: white; display: grid; place-items: center; font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; border: 3px solid var(--gold); }
+    .brand-text h1 { font-size: 1.45rem; margin-bottom: 4px; }
+    .brand-text span { color: var(--gold); font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 30px; }
+    nav a { color: var(--dark); text-decoration: none; font-weight: 700; }
+    .hero-card { background: white; border-radius: 24px; padding: 36px; box-shadow: 0 18px 50px rgba(0,0,0,0.08); }
+    .hero-card h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 3.5vw, 2.8rem); color: var(--crimson); margin-bottom: 18px; }
+    .hero-card p { color: var(--gray); line-height: 1.8; margin-bottom: 20px; }
+    .hero-card ul { list-style: none; margin-top: 20px; padding-left: 0; }
+    .hero-card ul li { margin-bottom: 14px; padding-left: 18px; position: relative; color: var(--gray); line-height: 1.7; }
+    .hero-card ul li::before { content: '•'; position: absolute; left: 0; color: var(--crimson); }
+    .btn-primary { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; background: var(--crimson); color: white; border-radius: 999px; text-decoration: none; font-weight: 700; transition: transform 0.25s ease, background 0.25s ease; }
+    .btn-primary:hover { transform: translateY(-2px); background: var(--gold); color: var(--dark); }
+    .community-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 28px; }
+    .community-card { background: var(--off-white); padding: 24px; border-radius: 20px; box-shadow: 0 12px 30px rgba(0,0,0,0.06); }
+    .community-card h3 { font-family: 'Playfair Display', serif; margin-bottom: 12px; color: var(--dark); }
+    .community-card p { color: var(--gray); line-height: 1.7; }
+    @media (max-width: 768px) {
+      .page-wrap { padding: 24px 16px; }
+      .brand { flex-direction: column; align-items: flex-start; }
+      .community-grid { grid-template-columns: 1fr; }
+      .btn-primary { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="departments.html">Departments</a>
+      <a href="community.html">Community</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="brand">
+      <div class="logo-circle">MB</div>
+      <div class="brand-text">
+        <h1>Muthiingini Boys High School</h1>
+        <span>Community Welcome</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h2>Welcome to the Muthiingini Community</h2>
+      <p>Explore the partnerships, events and support systems that make our school a home for learners, families and local partners. This page brings together the people who help our students thrive.</p>
+      <ul>
+        <li>Meet our Parent-Teacher Association</li>
+        <li>Learn how alumni support scholarships and mentorship</li>
+        <li>See how community projects connect our school to the region</li>
+      </ul>
+      <a href="community.html" class="btn-primary">Visit Community Page</a>
+    </div>
+    <div class="community-grid">
+      <div class="community-card">
+        <h3>Community Values</h3>
+        <p>At Muthiingini, community means teamwork, respect and commitment to service. Our school is strengthened when students, parents and partners work together.</p>
+      </div>
+      <div class="community-card">
+        <h3>What You Can Expect</h3>
+        <p>News, events, volunteer projects and student initiatives that bring the broader school community closer to every classroom and field.</p>
+      </div>
+    </div>
+    <a href="index.html" class="btn-primary" style="margin-top: 24px; display: inline-flex;">Back to Home</a>
+  </div>
+</body>
+</html>
