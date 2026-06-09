@@ -32,10 +32,19 @@
     .btn-cta:hover { background: var(--gold); color: var(--dark); }
     @media (max-width: 700px) { .community-grid { grid-template-columns: 1fr; } }
   </style>
+    nav { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 30px; }
+    nav a { color: var(--dark); text-decoration: none; font-weight: 700; }
+  </style>
 </head>
 <body>
-  
   <div class="page-wrap">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="departments.html">Departments</a>
+      <a href="community.html">Community</a>
+      <a href="contact.html">Contact</a>
+    </nav>
     <div class="brand">
       <div class="logo-circle">MB</div>
       <div class="brand-text">
@@ -46,9 +55,9 @@
 
     <div class="card">
       <h2>Our Community Partnerships</h2>
-      <a href="#our-community" class="btn-cta">Our community</a>
+      <a href="our-community.html" class="btn-cta">Our community</a>
       <p>Muthiingini Boys High School is proud to be part of the local community. We collaborate with parents, alumni and local organizations to support student success and community development.</p>
-      <div class="community-grid" id="our-community">
+      <div class="community-grid">
         <div class="community-item">
           <h3>Parent-Teacher Association</h3>
           <p>Our PTA works closely with the school to enhance student welfare, organize events and provide resources for academic excellence.</p>

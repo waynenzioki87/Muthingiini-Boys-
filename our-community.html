@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Principal's Office | Muthiingini Boys High School</title>
+  <title>Our Community | Muthiingini Boys High School</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -16,20 +16,24 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: var(--off-white); color: var(--dark); font-family: 'Source Sans 3', sans-serif; }
     .page-wrap { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 30px; }
+    nav a { color: var(--dark); text-decoration: none; font-weight: 700; }
     .brand { display: flex; gap: 16px; align-items: center; margin-bottom: 30px; }
     .logo-circle { width: 54px; height: 54px; border-radius: 50%; background: var(--crimson); color: white; display: grid; place-items: center; font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; border: 3px solid var(--gold); }
     .brand-text h1 { font-size: 1.45rem; margin-bottom: 4px; }
     .brand-text span { color: var(--gold); font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase; }
-    .card { background: white; border-radius: 24px; padding: 34px; box-shadow: 0 18px 50px rgba(0,0,0,0.08); }
+    .card { background: white; border-radius: 24px; padding: 34px; box-shadow: 0 18px 50px rgba(0,0,0,0.08); margin-bottom: 30px; }
     .card h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 3.5vw, 2.8rem); color: var(--crimson); margin-bottom: 18px; }
     .card p { color: var(--gray); line-height: 1.8; margin-bottom: 18px; }
-    nav { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 30px; }
-    nav a { color: var(--dark); text-decoration: none; font-weight: 700; }
+    .community-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .community-item { background: var(--off-white); padding: 22px; border-radius: 18px; }
+    .community-item h3 { font-family: 'Playfair Display', serif; margin-bottom: 10px; color: var(--dark); }
+    .community-item p { color: var(--gray); line-height: 1.7; }
     .btn-back { display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; background: var(--crimson); color: white; border-radius: 999px; text-decoration: none; font-weight: 700; }
+    @media (max-width: 700px) { .community-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
- 
   <div class="page-wrap">
     <nav>
       <a href="index.html">Home</a>
@@ -38,19 +42,39 @@
       <a href="community.html">Community</a>
       <a href="contact.html">Contact</a>
     </nav>
+
     <div class="brand">
       <div class="logo-circle">MB</div>
       <div class="brand-text">
         <h1>Muthiingini Boys High School</h1>
-        <span>Principal's Office</span>
+        <span>Our Community</span>
       </div>
     </div>
+
     <div class="card">
-      <h2>Leadership at the helm</h2>
-      <p>The Principal’s Office provides strategic direction for the school. Our principal oversees academic standards, staff development and the welfare of every student.</p>
-      <p>This office is dedicated to creating a disciplined, supportive learning environment where excellence is expected and every learner is encouraged to thrive.</p>
-      <a href="index.html" class="btn-back">← Back to Home</a>
+      <h2>Our Community</h2>
+      <p>This page highlights the strong partnerships and activities that connect Muthiingini Boys High School with the local community.</p>
+      <div class="community-grid">
+        <div class="community-item">
+          <h3>Parent-Teacher Association</h3>
+          <p>The PTA supports student welfare, school events and academic programs through active family engagement.</p>
+        </div>
+        <div class="community-item">
+          <h3>Alumni Network</h3>
+          <p>Former students mentor learners, support school projects and keep the Muthiingini spirit alive.</p>
+        </div>
+        <div class="community-item">
+          <h3>Local Partnerships</h3>
+          <p>We collaborate with local businesses and nonprofits on community service, internships and outreach.</p>
+        </div>
+        <div class="community-item">
+          <h3>Environmental Projects</h3>
+          <p>Students engage in tree planting, clean-ups, and environmental stewardship across the area.</p>
+        </div>
+      </div>
     </div>
+
+    <a href="community.html" class="btn-back">← Back to Community</a>
   </div>
 </body>
 </html>
